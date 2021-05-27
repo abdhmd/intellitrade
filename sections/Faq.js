@@ -5,15 +5,15 @@ import { faqData } from "../data";
 
 const Faq = () => {
   return (
-    <section className="section background-white text-center">
+    <section className="section background-white text-center" id="faq">
       <Container>
         <SectionTitle title="FAQ" subtitle="Please select a question." />
         <Row className="justify-content-center no-gutters mt-4">
           {faqData.map((item, i) => (
-            <Col  xs="auto" md="6" lg="4" className={faqStyles.cols}>
+            <Col xs="auto" md="6" lg="4" className={faqStyles.cols}>
               <div className={faqStyles.col}>
                 <img src={item.icon} alt={item.title} />
-                <p className='paragraph'>{item.title}</p>
+                <p className="paragraph">{item.title}</p>
                 {item.text && <span>{item.text}</span>}
               </div>
             </Col>

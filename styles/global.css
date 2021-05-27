@@ -5,6 +5,10 @@
   --light: #f0f5f6;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   background: var(--body);

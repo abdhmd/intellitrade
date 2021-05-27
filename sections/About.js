@@ -5,7 +5,7 @@ import aboutStyles from "../styles/About.module.css";
 
 const About = () => {
   return (
-    <section className="section ">
+    <section className="section " id="about">
       <Container className={aboutStyles.about}>
         <Row  xs="auto"  className={aboutStyles.row} >
           <Col className=" d-flex align-items-center justify-content-center p-0">
