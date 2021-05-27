@@ -1,0 +1,37 @@
+.cols {
+  width: 100%;
+}
+
+
+.col {
+  background: #666c6f1a;
+  border: 1px solid #666c6f33;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  height: 150px;
+  margin : 10px;
+}
+
+.cols:last-of-type .col {
+  height: inherit;
+  background: white;
+  border: none;
+}
+
+.col span {
+  font-size: 16px;
+  line-height: 20.08px;
+  color: var(--default);
+  width: 80%;
+}
+
+.col:hover {
+  background: white;
+  box-shadow: 0px 5px 10px 3px #0000001a;
+  border: none;
+  transition: ease-in 400ms all;
+}

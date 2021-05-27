@@ -1,0 +1,47 @@
+.copy,
+.contact {
+  width: 100%;
+  padding: unset;
+}
+
+.copy div,
+.contact div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+.footer p {
+  font-size: 16px;
+  line-height: 20.08px;
+  color: var(--default);
+}
+
+.copy p {
+  margin-bottom: 35px;
+}
+.contact p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .row{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 800px) {
+  .copy div {
+    align-items: flex-start;
+  }
+  .contact div {
+    align-items: flex-end;
+  }
+
+  .copy p,
+  .contact p {
+    margin-bottom: unset;
+  }
+}

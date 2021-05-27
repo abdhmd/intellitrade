@@ -1,0 +1,52 @@
+.menu {
+  display: none;
+}
+
+.links {
+  text-align: center;
+}
+.links a {
+  color: white;
+  margin: 0 25px;
+  opacity: 0.6;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.links a:hover {
+  opacity: 1;
+  transition: 400ms ease-in all;
+  text-decoration: none;
+}
+
+.sign {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.sign span {
+  cursor: pointer;
+}
+
+.sign span:first-of-type {
+  display: none;
+}
+
+.sign span:first-of-type img {
+  margin-left: 5px;
+}
+
+@media (min-width: 1200px) {
+  .menu,
+  .sign span:first-of-type {
+    display: unset;
+  }
+
+  .sign span:last-of-type {
+    display: none;
+  }
+}
